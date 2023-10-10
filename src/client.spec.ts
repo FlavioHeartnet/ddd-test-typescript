@@ -1,7 +1,8 @@
 import { describe, expect, test } from "vitest";
+import { Client } from "./client";
 
-describe('client test', () => {
-    test('client test', () => {
-        expect(1).toBe(1)
+describe('client test set', () => {
+    test('create client', () => {
+        expect(new Client).toBeInstanceOf(Client)
     });
 });
